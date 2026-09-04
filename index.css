@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #f8fafc;
+    color: #0f172a;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-academic {
+    font-family: 'Outfit', sans-serif;
+    letter-spacing: -0.025em;
+  }
+
+  .font-crest {
+    font-family: 'Outfit', sans-serif;
+    letter-spacing: 0.05em;
+  }
+
+  .font-math {
+    font-family: 'Fira Code', monospace;
+  }
+}
+
+/* Geometric engineering math dot matrix grid for light background */
+.math-grid {
+  background-image: radial-gradient(#0284c7 0.75px, transparent 0.75px);
+  background-size: 24px 24px;
+}
+
+.math-grid-dense {
+  background-image: radial-gradient(#0284c7 0.65px, transparent 0.65px);
+  background-size: 16px 16px;
+}
+
+.geometric-line-grid {
+  background-image: 
+    linear-gradient(to right, rgba(2, 132, 199, 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(2, 132, 199, 0.06) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+.glow-navy {
+  box-shadow: 0 10px 30px -5px rgba(2, 132, 199, 0.12);
+}
+
+.glow-gold {
+  box-shadow: 0 10px 30px -5px rgba(217, 119, 6, 0.12);
+}
+
+/* Custom scrollbar in light mode */
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #0284c7;
+}
+
